@@ -1,0 +1,15 @@
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\bin\Debug\net6.0\ServiceContracts.deps.json
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\bin\Debug\net6.0\ServiceContracts.dll
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\bin\Debug\net6.0\ServiceContracts.pdb
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\bin\Debug\net6.0\Entities.dll
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\bin\Debug\net6.0\Entities.pdb
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.AssemblyReference.cache
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfoInputs.cache
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfo.cs
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.CoreCompileInputs.cache
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.CopyComplete
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.dll
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\refint\ServiceContracts.dll
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ServiceContracts.pdb
+D:\projects\ASP.net.core\PersonsInfo\ServiceContracts\obj\Debug\net6.0\ref\ServiceContracts.dll
