@@ -1,0 +1,43 @@
+2023-12-18 02:42:13.860 +03:00 [DBG] Hosting starting
+2023-12-18 02:42:14.159 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-18 02:42:14.160 +03:00 [INF] Hosting environment: Development
+2023-12-18 02:42:14.161 +03:00 [INF] Content root path: D:\projects\ASP.net.core\PersonsInfo\CRUDExample\
+2023-12-18 02:42:14.162 +03:00 [DBG] Hosting started
+2023-12-18 02:42:14.543 +03:00 [DBG] Connection id "0HMVVB76274GN" accepted.
+2023-12-18 02:42:14.543 +03:00 [DBG] Connection id "0HMVVB76274GM" accepted.
+2023-12-18 02:42:14.546 +03:00 [DBG] Connection id "0HMVVB76274GM" started.
+2023-12-18 02:42:14.547 +03:00 [DBG] Connection id "0HMVVB76274GN" started.
+2023-12-18 02:42:14.584 +03:00 [DBG] Connection id "0HMVVB76274GN" disconnecting.
+2023-12-18 02:42:14.590 +03:00 [DBG] Connection id "0HMVVB76274GM" disconnecting.
+2023-12-18 02:42:14.593 +03:00 [DBG] Connection id "0HMVVB76274GN" stopped.
+2023-12-18 02:42:14.593 +03:00 [DBG] Connection id "0HMVVB76274GM" stopped.
+2023-12-18 02:54:34.230 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-12-18 02:54:34.908 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-12-18 02:54:35.759 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-12-18 02:54:35.766 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-12-18 02:54:35.775 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-12-18 02:54:35.779 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPdf.cshtml'.
+2023-12-18 02:54:35.782 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-12-18 02:54:35.791 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-12-18 02:54:35.793 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-12-18 02:54:35.794 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-12-18 02:54:37.290 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-18 02:54:38.214 +03:00 [INF] User profile is available. Using 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-18 02:54:38.271 +03:00 [DBG] Reading data from file 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys\key-6f76ce66-aca1-4e01-904f-f1c212983305.xml'.
+2023-12-18 02:54:38.304 +03:00 [DBG] Reading data from file 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys\key-fc268f58-7e20-452a-bd78-d64e3bb01dc0.xml'.
+2023-12-18 02:54:38.349 +03:00 [DBG] Found key {6f76ce66-aca1-4e01-904f-f1c212983305}.
+2023-12-18 02:54:38.361 +03:00 [DBG] Found key {fc268f58-7e20-452a-bd78-d64e3bb01dc0}.
+2023-12-18 02:54:38.379 +03:00 [DBG] Considering key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} with expiration date 2024-01-20 19:22:20Z as default key.
+2023-12-18 02:54:38.386 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-18 02:54:38.398 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-12-18 02:54:38.583 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-18 02:54:38.597 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-12-18 02:54:38.603 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-12-18 02:54:38.610 +03:00 [DBG] Using key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} as the default key.
+2023-12-18 02:54:38.614 +03:00 [DBG] Key ring with default key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} was loaded during application startup.
+2023-12-18 02:54:39.678 +03:00 [INF] Now listening on: http://localhost:5298
+2023-12-18 02:54:40.346 +03:00 [DBG] Connection id "0HMVVBE4AEF1A" received FIN.
+2023-12-18 02:54:40.746 +03:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-12-18 02:54:40.752 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-18 02:54:40.754 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-18 02:54:41.593 +03:00 [DBG] Connection id "0HMVVBE4AEF1A" sending FIN because: "The client closed the connection."

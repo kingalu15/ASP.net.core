@@ -1,0 +1,8 @@
+{
+  "CRUDExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample",
+  "Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\projects\\ASP.net.core\\PersonsInfo\\Entities",
+  "Repositories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\projects\\ASP.net.core\\PersonsInfo\\Repositories",
+  "RepositoryContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts",
+  "ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\projects\\ASP.net.core\\PersonsInfo\\ServiceContracts",
+  "Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\projects\\ASP.net.core\\PersonsInfo\\Services"
+}

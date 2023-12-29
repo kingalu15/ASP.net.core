@@ -1,0 +1,27 @@
+2023-12-30 02:06:30.008 +03:00 [DBG] Hosting starting
+2023-12-30 02:06:31.155 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-30 02:06:31.156 +03:00 [INF] Hosting environment: Development
+2023-12-30 02:06:31.194 +03:00 [INF] Content root path: D:\projects\ASP.net.core\PersonsInfo\CRUDExample\
+2023-12-30 02:06:31.198 +03:00 [DBG] Hosting started
+2023-12-30 02:06:33.731 +03:00 [DBG] Connection id "0HN08OB6HC3GL" accepted.
+2023-12-30 02:06:33.895 +03:00 [DBG] Connection id "0HN08OB6HC3GL" started.
+2023-12-30 02:06:34.128 +03:00 [DBG] Connection id "0HN08OB6HC3GM" accepted.
+2023-12-30 02:06:34.506 +03:00 [DBG] Connection id "0HN08OB6HC3GM" started.
+2023-12-30 02:06:34.513 +03:00 [DBG] Connection id "0HN08OB6HC3GN" accepted.
+2023-12-30 02:06:34.519 +03:00 [DBG] Connection id "0HN08OB6HC3GN" started.
+2023-12-30 02:06:36.068 +03:00 [DBG] Connection id "0HN08OB6HC3GN" disconnecting.
+2023-12-30 02:06:37.961 +03:00 [DBG] Connection id "0HN08OB6HC3GN" stopped.
+2023-12-30 02:06:40.333 +03:00 [DBG] Connection id "0HN08OB6HC3GO" accepted.
+2023-12-30 02:06:40.476 +03:00 [DBG] Connection id "0HN08OB6HC3GM" completed keep alive response.
+2023-12-30 02:06:40.532 +03:00 [DBG] Connection id "0HN08OB6HC3GO" started.
+2023-12-30 02:06:40.628 +03:00 [DBG] Connection id "0HN08OB6HC3GP" accepted.
+2023-12-30 02:06:40.638 +03:00 [DBG] Connection id "0HN08OB6HC3GP" started.
+2023-12-30 02:06:40.644 +03:00 [DBG] Connection id "0HN08OB6HC3GO" completed keep alive response.
+2023-12-30 02:06:40.805 +03:00 [DBG] Connection id "0HN08OB6HC3GP" completed keep alive response.
+2023-12-30 02:06:41.242 +03:00 [DBG] Connection id "0HN08OB6HC3GP" completed keep alive response.
+2023-12-30 02:06:45.761 +03:00 [DBG] Connection id "0HN08OB6HC3GO" disconnecting.
+2023-12-30 02:06:45.760 +03:00 [DBG] Connection id "0HN08OB6HC3GM" disconnecting.
+2023-12-30 02:06:45.767 +03:00 [DBG] Connection id "0HN08OB6HC3GP" disconnecting.
+2023-12-30 02:06:45.773 +03:00 [DBG] Connection id "0HN08OB6HC3GM" stopped.
+2023-12-30 02:06:45.773 +03:00 [DBG] Connection id "0HN08OB6HC3GO" stopped.
+2023-12-30 02:06:45.786 +03:00 [DBG] Connection id "0HN08OB6HC3GP" stopped.

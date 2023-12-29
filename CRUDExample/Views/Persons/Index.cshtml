@@ -6,7 +6,10 @@
 <form asp-controller="Persons" asp-action="Index" method="get">
  <h1>Persons</h1>
 
- <a asp-controller="Persons" asp-action="Create">Create Person</a>
+    <a asp-controller="Persons" asp-action="Create" class="ml">Create Person</a>
+    <a asp-controller="Persons" asp-action="personsPDF" class="ml">Download Persons PDF</a>
+    <a asp-controller="Persons" asp-action="PersonsCSV" class="ml">Download Persons CSV</a>
+    <a asp-controller="Persons" asp-action="PersonsExcel" class="ml">Download Persons Excel</a>
 
  <div class="box flex">
   <div class="flex-1">
@@ -38,7 +41,7 @@
  </div>
 
 
- <table class="table w-100 mt">
+ <table class="table w-100 mt persons">
   <thead>
    <tr>
     @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) {

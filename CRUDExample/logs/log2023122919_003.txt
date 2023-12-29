@@ -1,0 +1,20 @@
+2023-12-29 19:41:08.155 +03:00 [DBG] Hosting starting
+2023-12-29 19:41:08.709 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-29 19:41:08.710 +03:00 [INF] Hosting environment: Development
+2023-12-29 19:41:08.713 +03:00 [INF] Content root path: D:\projects\ASP.net.core\PersonsInfo\CRUDExample\
+2023-12-29 19:41:08.717 +03:00 [DBG] Hosting started
+2023-12-29 19:41:08.875 +03:00 [DBG] Connection id "0HN08HJQPJBJI" accepted.
+2023-12-29 19:41:08.878 +03:00 [DBG] Connection id "0HN08HJQPJBJI" started.
+2023-12-29 19:41:08.975 +03:00 [DBG] Connection id "0HN08HJQPJBJI" disconnecting.
+2023-12-29 19:41:09.053 +03:00 [DBG] Connection id "0HN08HJQPJBJI" stopped.
+2023-12-29 19:41:09.074 +03:00 [DBG] Connection id "0HN08HJQPJBJJ" accepted.
+2023-12-29 19:41:09.205 +03:00 [DBG] Connection id "0HN08HJQPJBJJ" started.
+2023-12-29 19:41:09.225 +03:00 [DBG] Connection id "0HN08HJQPJBJK" accepted.
+2023-12-29 19:41:10.794 +03:00 [DBG] Connection id "0HN08HJQPJBJK" started.
+2023-12-29 19:41:13.589 +03:00 [DBG] Connection id "0HN08HJQPJBJJ" completed keep alive response.
+2023-12-29 19:41:13.936 +03:00 [DBG] Connection id "0HN08HJQPJBJJ" completed keep alive response.
+2023-12-29 19:41:14.005 +03:00 [DBG] Connection id "0HN08HJQPJBJK" completed keep alive response.
+2023-12-29 19:46:14.125 +03:00 [DBG] Connection id "0HN08HJQPJBJK" disconnecting.
+2023-12-29 19:46:14.127 +03:00 [DBG] Connection id "0HN08HJQPJBJJ" disconnecting.
+2023-12-29 19:46:14.133 +03:00 [DBG] Connection id "0HN08HJQPJBJK" stopped.
+2023-12-29 19:46:14.133 +03:00 [DBG] Connection id "0HN08HJQPJBJJ" stopped.

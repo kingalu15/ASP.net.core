@@ -2,7 +2,9 @@ D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\Services.deps.jso
 D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\Services.dll
 D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\Services.pdb
 D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\Entities.dll
+D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\RepositoryContracts.dll
 D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\ServiceContracts.dll
+D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\RepositoryContracts.pdb
 D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\ServiceContracts.pdb
 D:\projects\ASP.net.core\PersonsInfo\Services\bin\Debug\net6.0\Entities.pdb
 D:\projects\ASP.net.core\PersonsInfo\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache

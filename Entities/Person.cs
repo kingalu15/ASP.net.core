@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities
 {
@@ -21,5 +22,17 @@ namespace Entities
         [StringLength(200)]
         public string? Address { get; set; }
     public bool ReceiveNewsLetters { get; set; }
-  }
+        [StringLength(20)]
+        public string? TIN { get;set; }
+        [ForeignKey("CountryID")]
+        public Country? Country { get; set; }
+
+        public override string ToString()
+        {
+            return $"Person ID:{PersonID}, PersonName:{PersonName}," +
+                   $" Email:{Email},Date of Birth:{DateOfBirth?.ToString("MM/dd/yyyy")}," +
+                   $" Gender:{Gender},CountryID:{CountryID},Address:{Address}";
+        }
+
+    }
 }

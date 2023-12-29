@@ -1,0 +1,87 @@
+2023-12-30 02:06:28.144 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-12-30 02:06:28.405 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-12-30 02:06:28.547 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-12-30 02:06:28.556 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-12-30 02:06:28.569 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-12-30 02:06:28.570 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPdf.cshtml'.
+2023-12-30 02:06:28.977 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-12-30 02:06:29.114 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-12-30 02:06:29.122 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-12-30 02:06:29.123 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-12-30 02:06:29.260 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-30 02:06:30.454 +03:00 [INF] User profile is available. Using 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-30 02:06:30.528 +03:00 [DBG] Reading data from file 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys\key-6f76ce66-aca1-4e01-904f-f1c212983305.xml'.
+2023-12-30 02:06:30.589 +03:00 [DBG] Reading data from file 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys\key-fc268f58-7e20-452a-bd78-d64e3bb01dc0.xml'.
+2023-12-30 02:06:30.665 +03:00 [DBG] Found key {6f76ce66-aca1-4e01-904f-f1c212983305}.
+2023-12-30 02:06:30.679 +03:00 [DBG] Found key {fc268f58-7e20-452a-bd78-d64e3bb01dc0}.
+2023-12-30 02:06:30.710 +03:00 [DBG] Considering key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} with expiration date 2024-01-20 19:22:20Z as default key.
+2023-12-30 02:06:30.729 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-30 02:06:30.751 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-12-30 02:06:30.754 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-30 02:06:30.777 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-12-30 02:06:30.788 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-12-30 02:06:30.795 +03:00 [DBG] Using key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} as the default key.
+2023-12-30 02:06:30.800 +03:00 [DBG] Key ring with default key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} was loaded during application startup.
+2023-12-30 02:06:31.076 +03:00 [INF] Now listening on: http://localhost:5298
+2023-12-30 02:06:31.107 +03:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-12-30 02:06:31.151 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-30 02:06:31.153 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-30 02:06:34.693 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/ - -
+2023-12-30 02:06:34.918 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-30 02:06:35.166 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2023-12-30 02:06:35.801 +03:00 [DBG] Connection id "0HN08OB6HC3GN" received FIN.
+2023-12-30 02:06:35.801 +03:00 [DBG] The request path / does not match a supported file type
+2023-12-30 02:06:36.169 +03:00 [DBG] 1 candidate(s) found for the request path '/'
+2023-12-30 02:06:36.199 +03:00 [DBG] Connection id "0HN08OB6HC3GN" sending FIN because: "The client closed the connection."
+2023-12-30 02:06:37.947 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern '' is valid for the request path '/'
+2023-12-30 02:06:38.227 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-12-30 02:06:38.235 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-12-30 02:06:38.744 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-12-30 02:06:38.757 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'System.Int32' while attempting to activate 'CRUDExample.Filters.ActionFilters.PersonsListActionFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-30 02:06:39.859 +03:00 [ERR] HTTP GET / responded 500 in 4695.5845 ms
+2023-12-30 02:06:40.171 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-30 02:06:40.250 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-30 02:06:40.637 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2023-12-30 02:06:40.640 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/ - - - 500 - text/html;+charset=utf-8 5956.6552ms
+2023-12-30 02:06:40.640 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - -
+2023-12-30 02:06:40.646 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.1242ms
+2023-12-30 02:06:40.811 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 170.5543ms
+2023-12-30 02:06:40.860 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - -
+2023-12-30 02:06:41.120 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+2023-12-30 02:06:41.125 +03:00 [DBG] The request path /favicon.ico does not match an existing file
+2023-12-30 02:06:41.152 +03:00 [DBG] No candidates found for the request path '/favicon.ico'
+2023-12-30 02:06:41.221 +03:00 [DBG] Request did not match any endpoints
+2023-12-30 02:06:41.225 +03:00 [INF] Response:
+StatusCode: 404
+2023-12-30 02:06:41.227 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 107.2606 ms
+2023-12-30 02:06:41.261 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 404 0 - 401.0954ms
+2023-12-30 02:06:45.758 +03:00 [DBG] Connection id "0HN08OB6HC3GM" received FIN.
+2023-12-30 02:06:45.758 +03:00 [DBG] Connection id "0HN08OB6HC3GO" received FIN.
+2023-12-30 02:06:45.758 +03:00 [DBG] Connection id "0HN08OB6HC3GP" received FIN.
+2023-12-30 02:06:45.764 +03:00 [DBG] Connection id "0HN08OB6HC3GO" sending FIN because: "The client closed the connection."
+2023-12-30 02:06:45.765 +03:00 [DBG] Connection id "0HN08OB6HC3GM" sending FIN because: "The client closed the connection."
+2023-12-30 02:06:45.774 +03:00 [DBG] Connection id "0HN08OB6HC3GP" sending FIN because: "The client closed the connection."

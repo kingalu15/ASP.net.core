@@ -4,6 +4,114 @@
     "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDTests\\CRUDTests.csproj": {}
   },
   "projects": {
+    "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\CRUDExample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\CRUDExample.csproj",
+        "projectName": "CRUDExample",
+        "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\CRUDExample.csproj",
+        "packagesPath": "C:\\Users\\KING-INFO-TECH\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KING-INFO-TECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\Repositories\\Repositories.csproj"
+              },
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj"
+              },
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\ServiceContracts\\ServiceContracts.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\ServiceContracts\\ServiceContracts.csproj"
+              },
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\Services\\Services.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDTests\\CRUDTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -33,6 +141,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\CRUDExample.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\CRUDExample.csproj"
+              },
               "D:\\projects\\ASP.net.core\\PersonsInfo\\Entities\\Entities.csproj": {
                 "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\Entities\\Entities.csproj"
               },
@@ -55,9 +166,61 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.18.0, )"
+            },
+            "EntityFrameworkCoreMock.Moq": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Fizzler": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Fizzler.Systems.HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.11.0, )"
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.1, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -168,6 +331,143 @@
         }
       }
     },
+    "D:\\projects\\ASP.net.core\\PersonsInfo\\Repositories\\Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\ASP.net.core\\PersonsInfo\\Repositories\\Repositories.csproj",
+        "projectName": "Repositories",
+        "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\KING-INFO-TECH\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KING-INFO-TECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\Entities\\Entities.csproj"
+              },
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectName": "RepositoryContracts",
+        "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj",
+        "packagesPath": "C:\\Users\\KING-INFO-TECH\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KING-INFO-TECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\projects\\ASP.net.core\\PersonsInfo\\ServiceContracts\\ServiceContracts.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -212,6 +512,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -261,6 +567,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\RepositoryContracts\\RepositoryContracts.csproj"
+              },
               "D:\\projects\\ASP.net.core\\PersonsInfo\\ServiceContracts\\ServiceContracts.csproj": {
                 "projectPath": "D:\\projects\\ASP.net.core\\PersonsInfo\\ServiceContracts\\ServiceContracts.csproj"
               }
@@ -276,6 +585,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[27.2.1, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "SerilogTimings": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

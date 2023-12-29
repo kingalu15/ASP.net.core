@@ -1,4 +1,5 @@
 D:\projects\ASP.net.core\PersonsInfo\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\projects\ASP.net.core\PersonsInfo\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
 D:\projects\ASP.net.core\PersonsInfo\Entities\bin\Debug\net6.0\Entities.dll
 D:\projects\ASP.net.core\PersonsInfo\Entities\bin\Debug\net6.0\Entities.pdb
 D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@ D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\Entities.csproj.C
 D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\Entities.dll
 D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\refint\Entities.dll
 D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\Entities.pdb
-D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\ref\Entities.dll
-D:\projects\ASP.net.core\PersonsInfo\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
 D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
+D:\projects\ASP.net.core\PersonsInfo\Entities\obj\Debug\net6.0\ref\Entities.dll

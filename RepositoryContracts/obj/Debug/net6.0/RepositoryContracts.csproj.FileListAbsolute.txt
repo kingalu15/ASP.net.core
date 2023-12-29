@@ -1,0 +1,15 @@
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.deps.json
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.dll
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.pdb
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\bin\Debug\net6.0\Entities.dll
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\bin\Debug\net6.0\Entities.pdb
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.AssemblyReference.cache
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfoInputs.cache
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfo.cs
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CopyComplete
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.dll
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\refint\RepositoryContracts.dll
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.pdb
+D:\projects\ASP.net.core\PersonsInfo\RepositoryContracts\obj\Debug\net6.0\ref\RepositoryContracts.dll

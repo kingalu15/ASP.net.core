@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
       "Id": "D:\\projects\\ASP.net.core\\PersonsInfo\\CRUDExample\\wwwroot\\StyleSheet.css",
       "PackagePath": "staticwebassets\\StyleSheet.css"
     },

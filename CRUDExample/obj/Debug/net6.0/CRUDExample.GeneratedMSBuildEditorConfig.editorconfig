@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\projects\ASP.net.core\PersonsInfo\CRUDExample
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/projects/ASP.net.core/PersonsInfo/CRUDExample/Views/Countries/UploadFromExcel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXFVwbG9hZEZyb21FeGNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/projects/ASP.net.core/PersonsInfo/CRUDExample/Views/Persons/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/projects/ASP.net.core/PersonsInfo/CRUDExample/Views/Persons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/ASP.net.core/PersonsInfo/CRUDExample/Views/Persons/PersonsPdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uc1xQZXJzb25zUGRmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/projects/ASP.net.core/PersonsInfo/CRUDExample/Views/Shared/_GridColumnHeader.cshtml]
