@@ -1,4 +1,5 @@
 ﻿using CRUDExample.Filters.ActionFilters;
+using CRUDExample.Filters.ResultFilter;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Rotativa.AspNetCore;
@@ -10,7 +11,8 @@ using System.Runtime.CompilerServices;
 namespace CRUDExample.Controllers
 {
   [Route("[controller]")]
-  [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "My-KeyFrom-Controller", "My-ValueFrom-Controller",3 })]
+  [TypeFilter(typeof(PersonsListResultFilter))]
+  [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "My-KeyFrom-Controller", "My-ValueFrom-Controller",3 },Order = 3)]
     public class PersonsController : Controller
   {
     //private fields
@@ -30,7 +32,8 @@ namespace CRUDExample.Controllers
     [Route("[action]")]
     [Route("/")]
     [TypeFilter(typeof(PersonsListActionFilter),Order = 1)]
-    [TypeFilter(typeof(ResponseHeaderActionFilter),Arguments = new object[] { "My-KeyFrom-Action", "My-ValueFrom-Action" },Order = 1)]
+    [TypeFilter(typeof(ResponseHeaderActionFilter),Arguments = new object[] { "My-KeyFrom-Action", "My-ValueFrom-Action",3},Order = 3)]
+    [TypeFilter(typeof(PersonsListResultFilter))]
     public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
     {
             //_logger.LogInformation("Index action method of PersonsController");
@@ -56,7 +59,7 @@ namespace CRUDExample.Controllers
     //Url: persons/create
     [Route("[action]")]
     [HttpGet]
-    [TypeFilter(typeof(ResponseHeaderActionFilter),Arguments= new object[] {"my-key","my-value",4})]
+    [TypeFilter(typeof(ResponseHeaderActionFilter),Arguments= new object[] {"my-key","my-value",3})]
     public async Task<IActionResult> Create()
     {
       List<CountryResponse> countries =await _countriesService.GetAllCountries();

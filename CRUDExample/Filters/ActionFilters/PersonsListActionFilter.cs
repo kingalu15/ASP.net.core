@@ -4,15 +4,15 @@ using ServiceContracts.DTO;
 
 namespace CRUDExample.Filters.ActionFilters
 {
-    public class PersonsListActionFilter : IActionFilter,IOrderedFilter
+    public class PersonsListActionFilter : IActionFilter
     {
 
         private readonly ILogger<PersonsListActionFilter> _logger;
-        public int Order { get; set; }
+       //public int Order { get; set; }
 
-        public PersonsListActionFilter(ILogger<PersonsListActionFilter> logger,int order) {
+        public PersonsListActionFilter(ILogger<PersonsListActionFilter> logger) {
             _logger = logger;
-            Order = order;
+           // Order = order;
         }
 
         public void OnActionExecuted(ActionExecutedContext context)

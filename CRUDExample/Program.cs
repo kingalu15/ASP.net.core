@@ -31,7 +31,7 @@ builder.Services.AddControllersWithViews(options =>
     var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>();
     var logger2 = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<PersonsListActionFilter>>();
     options.Filters.Add(new ResponseHeaderActionFilter(logger, "My-Key-From-Global","My-Value-From-Global",2));
-    options.Filters.Add(new PersonsListActionFilter(logger2,1));
+    options.Filters.Add(new PersonsListActionFilter(logger2));
 });
 
 //add services into IoC container

@@ -1,0 +1,533 @@
+2023-12-31 17:39:05.604 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 - -
+2023-12-31 17:39:05.624 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9
+2023-12-31 17:39:05.626 +03:00 [DBG] The request path /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 does not match a supported file type
+2023-12-31 17:39:05.631 +03:00 [DBG] 1 candidate(s) found for the request path '/Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9'
+2023-12-31 17:39:05.633 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)' with route pattern 'Persons/Edit/{personID}' is valid for the request path '/Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9'
+2023-12-31 17:39:05.636 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2023-12-31 17:39:05.637 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2023-12-31 17:39:05.643 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-12-31 17:39:05.646 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-31 17:39:05.648 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-12-31 17:39:05.650 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2023-12-31 17:39:05.655 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-31 17:39:05.656 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-12-31 17:39:05.658 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:39:05.661 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:39:05.663 +03:00 [DBG] Attempting to bind parameter 'personID' of type 'System.Guid' ...
+2023-12-31 17:39:05.665 +03:00 [DBG] Attempting to bind parameter 'personID' of type 'System.Guid' using the name 'personID' in request data ...
+2023-12-31 17:39:05.667 +03:00 [DBG] Done attempting to bind parameter 'personID' of type 'System.Guid'.
+2023-12-31 17:39:05.669 +03:00 [DBG] Done attempting to bind parameter 'personID' of type 'System.Guid'.
+2023-12-31 17:39:05.670 +03:00 [DBG] Attempting to validate the bound parameter 'personID' of type 'System.Guid' ...
+2023-12-31 17:39:05.672 +03:00 [DBG] Done attempting to validate the bound parameter 'personID' of type 'System.Guid'.
+2023-12-31 17:39:05.678 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2023-12-31 17:39:05.689 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-12-31 17:39:05.710 +03:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")
+    .FirstOrDefault(temp => temp.PersonID == __personID_0)'
+2023-12-31 17:39:05.728 +03:00 [DBG] Including navigation: 'Person.Country'.
+2023-12-31 17:39:05.765 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Person>(
+    asyncEnumerable: new SingleQueryingEnumerable<Person>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Person.Address (string) MaxLength(200), 1], [Property: Person.CountryID (Guid?) FK Index, 2], [Property: Person.DateOfBirth (DateTime?), 3], [Property: Person.Email (string) MaxLength(50), 4], [Property: Person.Gender (string) MaxLength(9), 5], [Property: Person.PersonName (string) MaxLength(50), 6], [Property: Person.ReceiveNewsLetters (bool) Required, 7], [Property: Person.TIN (string) ValueGenerated.OnAdd MaxLength(20), 8] }
+                1 -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: Country.CountryName (string), 10] }
+            SELECT TOP(1) p.PersonID, p.Address, p.CountryID, p.DateOfBirth, p.Email, p.Gender, p.PersonName, p.ReceiveNewsLetters, p.TaxIdentificationNumber, c.CountryID, c.CountryName
+            FROM Persons AS p
+            LEFT JOIN Countries AS c ON p.CountryID == c.CountryID
+            WHERE p.PersonID == @__personID_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Person>, 
+        Entities.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-12-31 17:39:05.786 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-31 17:39:05.787 +03:00 [DBG] Creating DbConnection.
+2023-12-31 17:39:05.789 +03:00 [DBG] Created DbConnection. (1ms).
+2023-12-31 17:39:05.790 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2023-12-31 17:39:05.819 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (33ms).
+2023-12-31 17:39:05.821 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.637 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.653 +03:00 [DBG] Executing DbCommand [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2023-12-31 17:39:08.700 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2023-12-31 17:39:08.704 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.706 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.708 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.712 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.716 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 11ms reading results.
+2023-12-31 17:39:08.718 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.720 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (1ms).
+2023-12-31 17:39:08.727 +03:00 [DBG] Compiling query expression: 
+'DbSet<Country>()'
+2023-12-31 17:39:08.733 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Country>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Country.CountryName (string), 1] }
+        SELECT c.CountryID, c.CountryName
+        FROM Countries AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Country>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-12-31 17:39:08.737 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-31 17:39:08.739 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-12-31 17:39:08.741 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2023-12-31 17:39:08.743 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.745 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.747 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2023-12-31 17:39:08.751 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2023-12-31 17:39:08.754 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.756 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.759 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.762 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.764 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.766 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.767 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.769 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.771 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.773 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.775 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.777 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.779 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:08.781 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.783 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 29ms reading results.
+2023-12-31 17:39:08.785 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:08.787 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (1ms).
+2023-12-31 17:39:08.794 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2023-12-31 17:39:08.798 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2023-12-31 17:39:08.801 +03:00 [DBG] View lookup cache miss for view 'Edit' in controller 'Persons'.
+2023-12-31 17:39:08.804 +03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-31 17:39:08.805 +03:00 [DBG] The view path '/Views/Persons/Edit.cshtml' was found in 4.7723ms.
+2023-12-31 17:39:08.814 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:39:08.817 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-12-31 17:39:08.819 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-12-31 17:39:08.842 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:39:08.845 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 and 
+2023-12-31 17:39:08.847 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9
+2023-12-31 17:39:08.868 +03:00 [DBG] A new antiforgery cookie token was created.
+2023-12-31 17:39:08.980 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:39:08.983 +03:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-12-31 17:39:08.985 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-12-31 17:39:09.004 +03:00 [INF] Executed ViewResult - view Edit executed in 203.8685ms.
+2023-12-31 17:39:09.007 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 3348.2198ms
+2023-12-31 17:39:09.008 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2023-12-31 17:39:09.010 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+My-KeyFrom-Controller: [Redacted]
+X-Frame-Options: [Redacted]
+2023-12-31 17:39:09.011 +03:00 [INF] HTTP GET /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 responded 200 in 3387.0565 ms
+2023-12-31 17:39:09.023 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-31 17:39:09.025 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-31 17:39:09.027 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-31 17:39:09.028 +03:00 [DBG] Disposing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:09.029 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2023-12-31 17:39:09.031 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 - - - 200 - text/html;+charset=utf-8 3426.7441ms
+2023-12-31 17:39:09.064 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2023-12-31 17:39:09.064 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - -
+2023-12-31 17:39:09.248 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 184.2695ms
+2023-12-31 17:39:09.250 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/jquery.validate.unobtrusive.min.js - -
+2023-12-31 17:39:09.280 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2023-12-31 17:39:09.329 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 264.6634ms
+2023-12-31 17:39:09.394 +03:00 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'D:\projects\ASP.net.core\PersonsInfo\CRUDExample\wwwroot\jquery.validate.unobtrusive.min.js'
+2023-12-31 17:39:09.586 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Sun, 31 Dec 2023 14:39:09 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 18 Jul 2023 15:46:24 GMT
+Content-Length: 5867
+2023-12-31 17:39:09.598 +03:00 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 318.0108 ms
+2023-12-31 17:39:09.603 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 352.8839ms
+2023-12-31 17:39:14.176 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2023-12-31 17:39:14.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.3311ms
+2023-12-31 17:39:52.083 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 - -
+2023-12-31 17:39:52.086 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2023-12-31 17:39:52.088 +03:00 [DBG] The request path /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 does not match a supported file type
+2023-12-31 17:39:52.092 +03:00 [DBG] 1 candidate(s) found for the request path '/Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9'
+2023-12-31 17:39:52.095 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)' with route pattern 'Persons/Edit/{personID}' is valid for the request path '/Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9'
+2023-12-31 17:39:52.098 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2023-12-31 17:39:52.101 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2023-12-31 17:39:52.104 +03:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-12-31 17:39:52.107 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-31 17:39:52.109 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-12-31 17:39:52.111 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2023-12-31 17:39:52.116 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-31 17:39:52.117 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-12-31 17:39:52.120 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:39:52.126 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:39:52.129 +03:00 [DBG] Attempting to bind parameter 'personID' of type 'System.Guid' ...
+2023-12-31 17:39:52.131 +03:00 [DBG] Attempting to bind parameter 'personID' of type 'System.Guid' using the name 'personID' in request data ...
+2023-12-31 17:39:52.133 +03:00 [DBG] Done attempting to bind parameter 'personID' of type 'System.Guid'.
+2023-12-31 17:39:52.135 +03:00 [DBG] Done attempting to bind parameter 'personID' of type 'System.Guid'.
+2023-12-31 17:39:52.136 +03:00 [DBG] Attempting to validate the bound parameter 'personID' of type 'System.Guid' ...
+2023-12-31 17:39:52.138 +03:00 [DBG] Done attempting to validate the bound parameter 'personID' of type 'System.Guid'.
+2023-12-31 17:39:52.141 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2023-12-31 17:39:52.212 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-12-31 17:39:52.221 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-31 17:39:52.224 +03:00 [DBG] Creating DbConnection.
+2023-12-31 17:39:52.225 +03:00 [DBG] Created DbConnection. (1ms).
+2023-12-31 17:39:52.227 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2023-12-31 17:39:52.229 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2023-12-31 17:39:52.230 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.232 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.234 +03:00 [DBG] Executing DbCommand [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2023-12-31 17:39:52.238 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2023-12-31 17:39:52.244 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.246 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.248 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.250 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.251 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 7ms reading results.
+2023-12-31 17:39:52.254 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.255 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (1ms).
+2023-12-31 17:39:52.270 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-31 17:39:52.272 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2023-12-31 17:39:52.274 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-12-31 17:39:52.277 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.279 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.280 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2023-12-31 17:39:52.284 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2023-12-31 17:39:52.287 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.289 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.291 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.294 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.296 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.298 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.300 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.303 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.305 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.307 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.310 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.312 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.314 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:39:52.316 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.318 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 31ms reading results.
+2023-12-31 17:39:52.321 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.322 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (1ms).
+2023-12-31 17:39:52.325 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2023-12-31 17:39:52.328 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2023-12-31 17:39:52.330 +03:00 [DBG] View lookup cache hit for view 'Edit' in controller 'Persons'.
+2023-12-31 17:39:52.331 +03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-31 17:39:52.333 +03:00 [DBG] The view path '/Views/Persons/Edit.cshtml' was found in 3.2212ms.
+2023-12-31 17:39:52.335 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:39:52.337 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-12-31 17:39:52.339 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-12-31 17:39:52.344 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:39:52.346 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 and 
+2023-12-31 17:39:52.349 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2023-12-31 17:39:52.353 +03:00 [DBG] An antiforgery cookie token was reused.
+2023-12-31 17:39:52.356 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:39:52.359 +03:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-12-31 17:39:52.362 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-12-31 17:39:52.372 +03:00 [INF] Executed ViewResult - view Edit executed in 42.8945ms.
+2023-12-31 17:39:52.374 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (CRUDExample) in 254.7792ms
+2023-12-31 17:39:52.376 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (CRUDExample)'
+2023-12-31 17:39:52.378 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+My-KeyFrom-Controller: [Redacted]
+2023-12-31 17:39:52.379 +03:00 [INF] HTTP GET /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 responded 200 in 293.3442 ms
+2023-12-31 17:39:52.383 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-31 17:39:52.385 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-31 17:39:52.388 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-31 17:39:52.391 +03:00 [DBG] Disposing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:39:52.393 +03:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-12-31 17:39:52.395 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 - - - 200 - text/html;+charset=utf-8 311.8741ms
+2023-12-31 17:39:52.416 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2023-12-31 17:39:52.419 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - -
+2023-12-31 17:39:52.516 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 100.3033ms
+2023-12-31 17:39:52.604 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 185.8944ms
+2023-12-31 17:39:57.454 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/Persons/Index - -
+2023-12-31 17:39:57.460 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2023-12-31 17:39:57.462 +03:00 [DBG] The request path /Persons/Index does not match a supported file type
+2023-12-31 17:39:57.464 +03:00 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2023-12-31 17:39:57.466 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern 'Persons/Index' is valid for the request path '/Persons/Index'
+2023-12-31 17:39:57.470 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-12-31 17:39:57.474 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-12-31 17:39:57.481 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-12-31 17:39:57.486 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-31 17:39:57.489 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-12-31 17:39:57.492 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2023-12-31 17:39:57.498 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-31 17:39:57.500 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2023-12-31 17:39:57.505 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:39:57.507 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:39:57.509 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-12-31 17:39:57.511 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-12-31 17:39:57.512 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:39:57.515 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:39:57.518 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:39:57.520 +03:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-12-31 17:39:57.523 +03:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:39:57.526 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-12-31 17:39:57.528 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-12-31 17:39:57.532 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-12-31 17:39:57.535 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-12-31 17:39:57.536 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-12-31 17:39:57.538 +03:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-12-31 17:39:57.540 +03:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-12-31 17:39:57.542 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-12-31 17:39:57.544 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-12-31 17:39:57.546 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:39:57.548 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:39:57.550 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:39:57.551 +03:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-12-31 17:39:57.553 +03:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:39:57.555 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-12-31 17:39:57.556 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-12-31 17:39:57.559 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:39:57.561 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:39:57.563 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:39:57.565 +03:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-12-31 17:39:57.567 +03:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:39:57.570 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2023-12-31 17:39:57.572 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2023-12-31 17:40:26.588 +03:00 [DBG] Connection id "0HN0A0C62CPCU" received FIN.
+2023-12-31 17:40:28.562 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/persons/index - -
+2023-12-31 17:40:28.563 +03:00 [INF] GetAllPerson method of PersonsRepository
+2023-12-31 17:40:28.565 +03:00 [DBG] Connection id "0HN0A0C62CPCU" sending FIN because: "The client closed the connection."
+2023-12-31 17:40:28.570 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-12-31 17:40:28.566 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+2023-12-31 17:40:28.577 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-31 17:40:28.579 +03:00 [DBG] The request path /persons/index does not match a supported file type
+2023-12-31 17:40:28.583 +03:00 [DBG] Creating DbConnection.
+2023-12-31 17:40:28.584 +03:00 [DBG] 1 candidate(s) found for the request path '/persons/index'
+2023-12-31 17:40:28.586 +03:00 [DBG] Created DbConnection. (3ms).
+2023-12-31 17:40:28.587 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern 'Persons/Index' is valid for the request path '/persons/index'
+2023-12-31 17:40:28.589 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (11ms).
+2023-12-31 17:40:28.591 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-12-31 17:40:28.594 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-12-31 17:40:28.593 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (15ms).
+2023-12-31 17:40:28.596 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-12-31 17:40:28.598 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:40:28.601 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-31 17:40:28.603 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:40:28.607 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-12-31 17:40:28.605 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-12-31 17:40:28.613 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2023-12-31 17:40:28.643 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-12-31 17:40:28.650 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-31 17:40:28.654 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.656 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2023-12-31 17:40:28.658 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.663 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.661 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:40:28.666 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.668 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-12-31 17:40:28.670 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.671 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-12-31 17:40:28.674 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.676 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-12-31 17:40:28.678 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.681 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:40:28.683 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.685 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:40:28.687 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.689 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:40:28.691 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.692 +03:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-12-31 17:40:28.695 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.696 +03:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-12-31 17:40:28.698 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.700 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-12-31 17:40:28.701 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.703 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-12-31 17:40:28.705 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.706 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-12-31 17:40:28.709 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.711 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-12-31 17:40:28.713 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.714 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-12-31 17:40:28.716 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.718 +03:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-12-31 17:40:28.720 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.721 +03:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-12-31 17:40:28.723 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.725 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-12-31 17:40:28.727 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.728 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-12-31 17:40:28.730 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.732 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:40:28.734 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.736 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:40:28.737 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.739 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:40:28.741 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.743 +03:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-12-31 17:40:28.745 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.747 +03:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-12-31 17:40:28.748 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.750 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-12-31 17:40:28.752 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.753 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-12-31 17:40:28.755 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.757 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:40:28.760 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.762 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:40:28.764 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:28.766 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:40:28.767 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:40:28.769 +03:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-12-31 17:40:28.771 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 117ms reading results.
+2023-12-31 17:40:28.773 +03:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-12-31 17:40:28.775 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:40:28.779 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (3ms).
+2023-12-31 17:40:28.780 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2023-12-31 17:40:28.782 +03:00 [INF] Time for Filtered Persons from Database completed in 218.6 ms
+2023-12-31 17:40:28.783 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2023-12-31 17:40:34.662 +03:00 [INF] GetAllPerson method of PersonsRepository
+2023-12-31 17:40:35.220 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-12-31 17:40:35.361 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-31 17:40:48.612 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2023-12-31 17:40:48.613 +03:00 [DBG] Creating DbConnection.
+2023-12-31 17:40:48.622 +03:00 [DBG] Created DbConnection. (9ms).
+2023-12-31 17:40:49.655 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (14293ms).
+2023-12-31 17:40:49.659 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (14297ms).
+2023-12-31 17:40:49.661 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:40:49.666 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:40:49.667 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-12-31 17:40:50.833 +03:00 [INF] Executed DbCommand (1,164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-12-31 17:40:51.447 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:51.451 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:51.567 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:52.328 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2023-12-31 17:40:52.329 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:52.724 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:52.763 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:53.861 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:54.987 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:55.437 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:55.441 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:55.444 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:55.952 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:56.420 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:40:56.462 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:09.846 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2023-12-31 17:41:09.854 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:09.861 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:09.863 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:10.264 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:10.673 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:11.827 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:12.695 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:14.697 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:15.055 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:16.093 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:16.095 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2023-12-31 17:41:16.097 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:17.126 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:18.680 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:19.091 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:19.571 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:20.735 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-31 17:41:20.738 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:41:20.740 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 29292ms reading results.
+2023-12-31 17:41:20.799 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2023-12-31 17:41:20.801 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (2ms).
+2023-12-31 17:41:22.749 +03:00 [INF] Time for Filtered Persons from Database completed in 48087.0 ms
+2023-12-31 17:41:22.753 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2023-12-31 17:41:23.645 +03:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2023-12-31 17:41:24.532 +03:00 [INF] Executing ViewResult, running view Index.
+2023-12-31 17:41:25.285 +03:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 1640.2936ms.
+2023-12-31 17:41:25.289 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:41:25.292 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-12-31 17:41:25.398 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-12-31 17:41:26.112 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:41:26.750 +03:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2023-12-31 17:41:26.752 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2023-12-31 17:41:26.753 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2023-12-31 17:41:27.280 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:41:27.282 +03:00 [DBG] Successfully processed template Persons for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons and 
+2023-12-31 17:41:27.291 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons
+2023-12-31 17:41:27.294 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:41:27.297 +03:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2023-12-31 17:41:27.300 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2023-12-31 17:41:27.357 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:41:27.361 +03:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2023-12-31 17:41:27.882 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2023-12-31 17:41:27.897 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-31 17:41:27.945 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-12-31 17:41:28.061 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-12-31 17:41:28.962 +03:00 [DBG] View lookup cache miss for view '_GridColumnHeader' in controller 'Persons'.
+2023-12-31 17:41:29.317 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-12-31 17:41:29.318 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
