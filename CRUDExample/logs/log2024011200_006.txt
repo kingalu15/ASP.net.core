@@ -1,0 +1,6 @@
+2024-01-12 00:06:07.306 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:16.802 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:39.244 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:39.497 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:47.330 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:47.537 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after

@@ -1,0 +1,958 @@
+2024-01-12 00:01:50.457 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:01:56.945 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:02:46.834 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:02:47.102 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:04:11.868 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:04:12.035 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:01.959 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2024-01-12 00:06:02.050 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2024-01-12 00:06:02.052 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2024-01-12 00:06:02.057 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2024-01-12 00:06:02.065 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2024-01-12 00:06:02.066 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPdf.cshtml'.
+2024-01-12 00:06:02.067 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2024-01-12 00:06:02.067 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-01-12 00:06:02.069 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-01-12 00:06:02.074 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-01-12 00:06:02.112 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-01-12 00:06:02.399 +03:00 [INF] User profile is available. Using 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-12 00:06:02.460 +03:00 [DBG] Reading data from file 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys\key-6f76ce66-aca1-4e01-904f-f1c212983305.xml'.
+2024-01-12 00:06:02.468 +03:00 [DBG] Reading data from file 'C:\Users\KING-INFO-TECH\AppData\Local\ASP.NET\DataProtection-Keys\key-fc268f58-7e20-452a-bd78-d64e3bb01dc0.xml'.
+2024-01-12 00:06:02.486 +03:00 [DBG] Found key {6f76ce66-aca1-4e01-904f-f1c212983305}.
+2024-01-12 00:06:02.899 +03:00 [DBG] Found key {fc268f58-7e20-452a-bd78-d64e3bb01dc0}.
+2024-01-12 00:06:02.979 +03:00 [DBG] Considering key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} with expiration date 2024-01-20 19:22:20Z as default key.
+2024-01-12 00:06:02.989 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-01-12 00:06:03.027 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-01-12 00:06:03.032 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-01-12 00:06:03.046 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-01-12 00:06:03.053 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-01-12 00:06:03.062 +03:00 [DBG] Using key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} as the default key.
+2024-01-12 00:06:03.065 +03:00 [DBG] Key ring with default key {fc268f58-7e20-452a-bd78-d64e3bb01dc0} was loaded during application startup.
+2024-01-12 00:06:03.340 +03:00 [INF] Now listening on: http://localhost:5298
+2024-01-12 00:06:03.604 +03:00 [DBG] Connection id "0HN0IT4FFGJSF" received FIN.
+2024-01-12 00:06:03.604 +03:00 [DBG] Connection id "0HN0IT4FFGJSG" received FIN.
+2024-01-12 00:06:04.666 +03:00 [DBG] Loaded hosting startup assembly CRUDExample
+2024-01-12 00:06:05.501 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-01-12 00:06:05.594 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-01-12 00:06:05.608 +03:00 [DBG] Connection id "0HN0IT4FFGJSF" sending FIN because: "The client closed the connection."
+2024-01-12 00:06:06.322 +03:00 [DBG] Connection id "0HN0IT4FFGJSG" sending FIN because: "The client closed the connection."
+2024-01-12 00:06:06.406 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/ - -
+2024-01-12 00:06:06.581 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-01-12 00:06:06.618 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-01-12 00:06:06.632 +03:00 [DBG] The request path / does not match a supported file type
+2024-01-12 00:06:06.697 +03:00 [DBG] 1 candidate(s) found for the request path '/'
+2024-01-12 00:06:06.789 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern '' is valid for the request path '/'
+2024-01-12 00:06:06.793 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-01-12 00:06:06.796 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-01-12 00:06:06.894 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-01-12 00:06:06.908 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-12 00:06:06.911 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-01-12 00:06:06.914 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2024-01-12 00:06:06.920 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-12 00:06:06.924 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2024-01-12 00:06:06.930 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:07.147 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-01-12 00:06:07.185 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:07.192 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2024-01-12 00:06:07.196 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2024-01-12 00:06:07.199 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:07.202 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:07.204 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:07.207 +03:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2024-01-12 00:06:07.220 +03:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:07.226 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2024-01-12 00:06:07.229 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2024-01-12 00:06:07.231 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:07.234 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:07.236 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:07.237 +03:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2024-01-12 00:06:07.239 +03:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:07.242 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2024-01-12 00:06:07.244 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2024-01-12 00:06:07.246 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:07.261 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:07.264 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:07.266 +03:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2024-01-12 00:06:07.271 +03:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:07.275 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2024-01-12 00:06:07.278 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2024-01-12 00:06:07.282 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:07.284 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:07.287 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:07.296 +03:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2024-01-12 00:06:07.299 +03:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:07.336 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:07.427 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:07.507 +03:00 [INF] GetAllPerson method of PersonsRepository
+2024-01-12 00:06:10.309 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2024-01-12 00:06:10.466 +03:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2024-01-12 00:06:10.892 +03:00 [DBG] Including navigation: 'Person.Country'.
+2024-01-12 00:06:11.698 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Person>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Person.Address (string) MaxLength(200), 1], [Property: Person.CountryID (Guid?) FK Index, 2], [Property: Person.DateOfBirth (DateTime?), 3], [Property: Person.Email (string) MaxLength(50), 4], [Property: Person.Gender (string) MaxLength(9), 5], [Property: Person.PersonName (string) MaxLength(50), 6], [Property: Person.ReceiveNewsLetters (bool) Required, 7], [Property: Person.TIN (string) ValueGenerated.OnAdd MaxLength(20), 8] }
+            1 -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: Country.CountryName (string), 10] }
+        SELECT p.PersonID, p.Address, p.CountryID, p.DateOfBirth, p.Email, p.Gender, p.PersonName, p.ReceiveNewsLetters, p.TaxIdentificationNumber, c.CountryID, c.CountryName
+        FROM Persons AS p
+        LEFT JOIN Countries AS c ON p.CountryID == c.CountryID), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Person>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-01-12 00:06:11.794 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-12 00:06:11.798 +03:00 [DBG] Creating DbConnection.
+2024-01-12 00:06:11.811 +03:00 [DBG] Created DbConnection. (5ms).
+2024-01-12 00:06:11.830 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (32ms).
+2024-01-12 00:06:11.834 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (51ms).
+2024-01-12 00:06:11.847 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:11.858 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:11.884 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-01-12 00:06:11.951 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-01-12 00:06:12.047 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.173 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.211 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.229 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.233 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.236 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.243 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.246 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.248 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.251 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.323 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.524 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.526 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.604 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.616 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.635 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.638 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.640 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.644 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.653 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.656 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.658 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.680 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.683 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.689 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.694 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:12.946 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:13.692 +03:00 [DBG] Connection id "0HN0IT4FFGJSH" received FIN.
+2024-01-12 00:06:15.077 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:15.084 +03:00 [DBG] Connection id "0HN0IT4FFGJSH" sending FIN because: "The client closed the connection."
+2024-01-12 00:06:15.087 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:15.094 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:15.105 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:15.488 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 3516ms reading results.
+2024-01-12 00:06:15.615 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:15.625 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (9ms).
+2024-01-12 00:06:16.707 +03:00 [INF] Time for Filtered Persons from Database completed in 9201.6 ms
+2024-01-12 00:06:16.774 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:16.799 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:16.816 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-01-12 00:06:16.826 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-01-12 00:06:16.832 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2024-01-12 00:06:16.837 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2024-01-12 00:06:16.846 +03:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2024-01-12 00:06:16.864 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-12 00:06:16.874 +03:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 23.3152ms.
+2024-01-12 00:06:16.979 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:17.029 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2024-01-12 00:06:17.033 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2024-01-12 00:06:17.062 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:17.088 +03:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2024-01-12 00:06:17.103 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2024-01-12 00:06:17.114 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:17.127 +03:00 [DBG] Successfully processed template Persons for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons and 
+2024-01-12 00:06:17.200 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons
+2024-01-12 00:06:17.380 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:17.395 +03:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2024-01-12 00:06:17.398 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2024-01-12 00:06:17.404 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:17.412 +03:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2024-01-12 00:06:17.415 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2024-01-12 00:06:17.478 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:17.514 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2024-01-12 00:06:17.546 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2024-01-12 00:06:17.565 +03:00 [DBG] View lookup cache miss for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:17.648 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:18.014 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:18.028 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:18.031 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:18.038 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:18.042 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:18.044 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:18.048 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:18.328 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 and 
+2024-01-12 00:06:18.401 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9
+2024-01-12 00:06:18.482 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:18.574 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 and 
+2024-01-12 00:06:18.583 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/14e2d83f-3bac-442c-bd53-39ba45f1b1c9
+2024-01-12 00:06:18.613 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:18.615 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be and 
+2024-01-12 00:06:18.617 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2024-01-12 00:06:18.666 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.092 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/d15c6d9f-70b4-48c5-afd3-e71261f1a9be and 
+2024-01-12 00:06:19.117 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2024-01-12 00:06:19.475 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.481 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2024-01-12 00:06:19.484 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2024-01-12 00:06:19.486 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.493 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2024-01-12 00:06:19.496 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2024-01-12 00:06:19.499 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.503 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/012107df-862f-4f16-ba94-e5c16886f005 and 
+2024-01-12 00:06:19.512 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/012107df-862f-4f16-ba94-e5c16886f005
+2024-01-12 00:06:19.515 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.518 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/012107df-862f-4f16-ba94-e5c16886f005 and 
+2024-01-12 00:06:19.527 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/012107df-862f-4f16-ba94-e5c16886f005
+2024-01-12 00:06:19.537 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.543 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/0a1838f9-6c22-4654-88a1-cdb432843e7e and 
+2024-01-12 00:06:19.546 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/0a1838f9-6c22-4654-88a1-cdb432843e7e
+2024-01-12 00:06:19.550 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.565 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/0a1838f9-6c22-4654-88a1-cdb432843e7e and 
+2024-01-12 00:06:19.568 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/0a1838f9-6c22-4654-88a1-cdb432843e7e
+2024-01-12 00:06:19.575 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.578 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2024-01-12 00:06:19.582 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2024-01-12 00:06:19.588 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.594 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2024-01-12 00:06:19.597 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2024-01-12 00:06:19.601 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.613 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/29339209-63f5-492f-8459-754943c74abf and 
+2024-01-12 00:06:19.615 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/29339209-63f5-492f-8459-754943c74abf
+2024-01-12 00:06:19.619 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.626 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/29339209-63f5-492f-8459-754943c74abf and 
+2024-01-12 00:06:19.629 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/29339209-63f5-492f-8459-754943c74abf
+2024-01-12 00:06:19.634 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.641 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/c03bbe45-9aeb-4d24-99e0-4743016ffce9 and 
+2024-01-12 00:06:19.644 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/c03bbe45-9aeb-4d24-99e0-4743016ffce9
+2024-01-12 00:06:19.648 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.654 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/c03bbe45-9aeb-4d24-99e0-4743016ffce9 and 
+2024-01-12 00:06:19.658 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/c03bbe45-9aeb-4d24-99e0-4743016ffce9
+2024-01-12 00:06:19.661 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.665 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/15fafb1d-3684-4561-b4b6-62a1b06cf6aa and 
+2024-01-12 00:06:19.667 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/15fafb1d-3684-4561-b4b6-62a1b06cf6aa
+2024-01-12 00:06:19.672 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.674 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/15fafb1d-3684-4561-b4b6-62a1b06cf6aa and 
+2024-01-12 00:06:19.677 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/15fafb1d-3684-4561-b4b6-62a1b06cf6aa
+2024-01-12 00:06:19.682 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:19.733 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 and 
+2024-01-12 00:06:20.182 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2024-01-12 00:06:20.214 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:20.216 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 and 
+2024-01-12 00:06:20.265 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2024-01-12 00:06:20.279 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:20.552 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/2a6d3738-9def-43ac-9279-0310edc7ceca and 
+2024-01-12 00:06:20.751 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/2a6d3738-9def-43ac-9279-0310edc7ceca
+2024-01-12 00:06:20.848 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.249 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/2a6d3738-9def-43ac-9279-0310edc7ceca and 
+2024-01-12 00:06:21.259 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/2a6d3738-9def-43ac-9279-0310edc7ceca
+2024-01-12 00:06:21.335 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.350 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 and 
+2024-01-12 00:06:21.358 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189
+2024-01-12 00:06:21.363 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.366 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/ac660a73-b0b7-4340-abc1-a914257a6189 and 
+2024-01-12 00:06:21.376 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/ac660a73-b0b7-4340-abc1-a914257a6189
+2024-01-12 00:06:21.380 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.383 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/89e5f445-d89f-4e12-94e0-5ad5b235d704 and 
+2024-01-12 00:06:21.392 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/89e5f445-d89f-4e12-94e0-5ad5b235d704
+2024-01-12 00:06:21.395 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.398 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/89e5f445-d89f-4e12-94e0-5ad5b235d704 and 
+2024-01-12 00:06:21.407 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/89e5f445-d89f-4e12-94e0-5ad5b235d704
+2024-01-12 00:06:21.412 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.416 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 and 
+2024-01-12 00:06:21.429 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2024-01-12 00:06:21.432 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.443 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 and 
+2024-01-12 00:06:21.446 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2024-01-12 00:06:21.449 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.459 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/a3b9833b-8a4d-43e9-8690-61e08df81a9a and 
+2024-01-12 00:06:21.463 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/a3b9833b-8a4d-43e9-8690-61e08df81a9a
+2024-01-12 00:06:21.469 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.482 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/a3b9833b-8a4d-43e9-8690-61e08df81a9a and 
+2024-01-12 00:06:21.487 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/a3b9833b-8a4d-43e9-8690-61e08df81a9a
+2024-01-12 00:06:21.493 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.497 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/2ddffc38-693a-4a00-b350-2e7695c1f690 and 
+2024-01-12 00:06:21.499 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/2ddffc38-693a-4a00-b350-2e7695c1f690
+2024-01-12 00:06:21.504 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.513 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/2ddffc38-693a-4a00-b350-2e7695c1f690 and 
+2024-01-12 00:06:21.515 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/2ddffc38-693a-4a00-b350-2e7695c1f690
+2024-01-12 00:06:21.565 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:21.577 +03:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2024-01-12 00:06:21.582 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2024-01-12 00:06:21.673 +03:00 [INF] Executed ViewResult - view Index executed in 4829.8583ms.
+2024-01-12 00:06:21.681 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method after
+2024-01-12 00:06:21.683 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method after
+2024-01-12 00:06:21.696 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 14767.6052ms
+2024-01-12 00:06:21.700 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-01-12 00:06:21.710 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Last-Modified: 2024-01-12 00:06
+My-Key-From-Global: [Redacted]
+My-KeyFrom-Controller: [Redacted]
+My-KeyFrom-Action: [Redacted]
+2024-01-12 00:06:21.726 +03:00 [INF] HTTP GET / responded 200 in 15103.1116 ms
+2024-01-12 00:06:21.764 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-01-12 00:06:21.781 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-01-12 00:06:21.825 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-01-12 00:06:21.834 +03:00 [DBG] Disposing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:21.838 +03:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2024-01-12 00:06:21.844 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/ - - - 200 - text/html;+charset=utf-8 15446.0143ms
+2024-01-12 00:06:23.894 +03:00 [DBG] Connection id "0HN0IT4FFGJSI" received FIN.
+2024-01-12 00:06:23.921 +03:00 [DBG] Connection id "0HN0IT4FFGJSI" sending FIN because: "The client closed the connection."
+2024-01-12 00:06:38.878 +03:00 [DBG] Connection id "0HN0IT4FFGJSJ" received FIN.
+2024-01-12 00:06:38.889 +03:00 [DBG] Connection id "0HN0IT4FFGJSJ" sending FIN because: "The client closed the connection."
+2024-01-12 00:06:39.052 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/ - -
+2024-01-12 00:06:39.059 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-01-12 00:06:39.062 +03:00 [DBG] The request path / does not match a supported file type
+2024-01-12 00:06:39.064 +03:00 [DBG] 1 candidate(s) found for the request path '/'
+2024-01-12 00:06:39.066 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern '' is valid for the request path '/'
+2024-01-12 00:06:39.069 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-01-12 00:06:39.070 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-01-12 00:06:39.073 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-01-12 00:06:39.083 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-12 00:06:39.116 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-01-12 00:06:39.128 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2024-01-12 00:06:39.147 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-12 00:06:39.150 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2024-01-12 00:06:39.157 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:39.160 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:39.163 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2024-01-12 00:06:39.165 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2024-01-12 00:06:39.166 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:39.173 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:39.175 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:39.177 +03:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2024-01-12 00:06:39.179 +03:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2024-01-12 00:06:39.181 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2024-01-12 00:06:39.183 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2024-01-12 00:06:39.186 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:39.196 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:39.199 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:39.204 +03:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2024-01-12 00:06:39.207 +03:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2024-01-12 00:06:39.211 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2024-01-12 00:06:39.213 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2024-01-12 00:06:39.216 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:39.220 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:39.223 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:39.224 +03:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2024-01-12 00:06:39.227 +03:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2024-01-12 00:06:39.228 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2024-01-12 00:06:39.230 +03:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2024-01-12 00:06:39.233 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:39.235 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:39.237 +03:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:39.239 +03:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2024-01-12 00:06:39.242 +03:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2024-01-12 00:06:39.246 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:39.292 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:39.294 +03:00 [INF] GetAllPerson method of PersonsRepository
+2024-01-12 00:06:39.300 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2024-01-12 00:06:39.363 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-12 00:06:39.366 +03:00 [DBG] Creating DbConnection.
+2024-01-12 00:06:39.367 +03:00 [DBG] Created DbConnection. (1ms).
+2024-01-12 00:06:39.369 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2024-01-12 00:06:39.372 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-01-12 00:06:39.376 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:39.378 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:39.381 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-01-12 00:06:39.389 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-01-12 00:06:39.394 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.396 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.398 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.400 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.404 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.407 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.410 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.412 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.414 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.416 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.419 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.422 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.425 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.427 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.430 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.435 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.440 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.446 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.449 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.452 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.455 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.458 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.460 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.463 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.466 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.469 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.472 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.475 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.477 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.479 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:39.482 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:39.484 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 90ms reading results.
+2024-01-12 00:06:39.487 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:39.490 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-01-12 00:06:39.492 +03:00 [INF] Time for Filtered Persons from Database completed in 197.8 ms
+2024-01-12 00:06:39.494 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:39.495 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:39.499 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-01-12 00:06:39.501 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-01-12 00:06:39.505 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2024-01-12 00:06:39.508 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2024-01-12 00:06:39.510 +03:00 [DBG] View lookup cache hit for view 'Index' in controller 'Persons'.
+2024-01-12 00:06:39.513 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-12 00:06:39.516 +03:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 5.9987ms.
+2024-01-12 00:06:39.524 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.527 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2024-01-12 00:06:39.647 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2024-01-12 00:06:39.652 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.656 +03:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2024-01-12 00:06:39.661 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2024-01-12 00:06:39.665 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.696 +03:00 [DBG] Successfully processed template Persons for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons and 
+2024-01-12 00:06:39.700 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons
+2024-01-12 00:06:39.705 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.707 +03:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2024-01-12 00:06:39.715 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2024-01-12 00:06:39.717 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.724 +03:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2024-01-12 00:06:39.727 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2024-01-12 00:06:39.732 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.743 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2024-01-12 00:06:39.748 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2024-01-12 00:06:39.751 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.754 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.757 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.759 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.762 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.764 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.766 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.807 +03:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2024-01-12 00:06:39.810 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.813 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 and 
+2024-01-12 00:06:39.815 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/14e2d83f-3bac-442c-bd53-39ba45f1b1c9
+2024-01-12 00:06:39.819 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.823 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/14e2d83f-3bac-442c-bd53-39ba45f1b1c9 and 
+2024-01-12 00:06:39.825 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/14e2d83f-3bac-442c-bd53-39ba45f1b1c9
+2024-01-12 00:06:39.828 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:39.830 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be and 
+2024-01-12 00:06:39.894 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2024-01-12 00:06:40.013 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.016 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/d15c6d9f-70b4-48c5-afd3-e71261f1a9be and 
+2024-01-12 00:06:40.021 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2024-01-12 00:06:40.083 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.098 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2024-01-12 00:06:40.100 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2024-01-12 00:06:40.112 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.116 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2024-01-12 00:06:40.131 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2024-01-12 00:06:40.133 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.147 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/012107df-862f-4f16-ba94-e5c16886f005 and 
+2024-01-12 00:06:40.149 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/012107df-862f-4f16-ba94-e5c16886f005
+2024-01-12 00:06:40.160 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.165 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/012107df-862f-4f16-ba94-e5c16886f005 and 
+2024-01-12 00:06:40.169 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/012107df-862f-4f16-ba94-e5c16886f005
+2024-01-12 00:06:40.174 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.181 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/0a1838f9-6c22-4654-88a1-cdb432843e7e and 
+2024-01-12 00:06:40.183 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/0a1838f9-6c22-4654-88a1-cdb432843e7e
+2024-01-12 00:06:40.188 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.191 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/0a1838f9-6c22-4654-88a1-cdb432843e7e and 
+2024-01-12 00:06:40.197 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/0a1838f9-6c22-4654-88a1-cdb432843e7e
+2024-01-12 00:06:40.200 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.206 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2024-01-12 00:06:40.210 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2024-01-12 00:06:40.215 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.219 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2024-01-12 00:06:40.223 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2024-01-12 00:06:40.229 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.233 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/29339209-63f5-492f-8459-754943c74abf and 
+2024-01-12 00:06:40.236 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/29339209-63f5-492f-8459-754943c74abf
+2024-01-12 00:06:40.240 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.249 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/29339209-63f5-492f-8459-754943c74abf and 
+2024-01-12 00:06:40.256 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/29339209-63f5-492f-8459-754943c74abf
+2024-01-12 00:06:40.263 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.266 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/c03bbe45-9aeb-4d24-99e0-4743016ffce9 and 
+2024-01-12 00:06:40.269 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/c03bbe45-9aeb-4d24-99e0-4743016ffce9
+2024-01-12 00:06:40.318 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.322 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/c03bbe45-9aeb-4d24-99e0-4743016ffce9 and 
+2024-01-12 00:06:40.326 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/c03bbe45-9aeb-4d24-99e0-4743016ffce9
+2024-01-12 00:06:40.333 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.366 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/15fafb1d-3684-4561-b4b6-62a1b06cf6aa and 
+2024-01-12 00:06:40.398 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/15fafb1d-3684-4561-b4b6-62a1b06cf6aa
+2024-01-12 00:06:40.414 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.429 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/15fafb1d-3684-4561-b4b6-62a1b06cf6aa and 
+2024-01-12 00:06:40.433 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/15fafb1d-3684-4561-b4b6-62a1b06cf6aa
+2024-01-12 00:06:40.449 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.477 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 and 
+2024-01-12 00:06:40.521 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2024-01-12 00:06:40.769 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:40.773 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 and 
+2024-01-12 00:06:40.775 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2024-01-12 00:06:42.998 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:43.265 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/2a6d3738-9def-43ac-9279-0310edc7ceca and 
+2024-01-12 00:06:44.046 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/2a6d3738-9def-43ac-9279-0310edc7ceca
+2024-01-12 00:06:44.545 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.549 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/2a6d3738-9def-43ac-9279-0310edc7ceca and 
+2024-01-12 00:06:44.552 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/2a6d3738-9def-43ac-9279-0310edc7ceca
+2024-01-12 00:06:44.554 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.556 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 and 
+2024-01-12 00:06:44.566 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189
+2024-01-12 00:06:44.579 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.582 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/ac660a73-b0b7-4340-abc1-a914257a6189 and 
+2024-01-12 00:06:44.585 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/ac660a73-b0b7-4340-abc1-a914257a6189
+2024-01-12 00:06:44.588 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.592 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/89e5f445-d89f-4e12-94e0-5ad5b235d704 and 
+2024-01-12 00:06:44.599 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/89e5f445-d89f-4e12-94e0-5ad5b235d704
+2024-01-12 00:06:44.603 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.607 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/89e5f445-d89f-4e12-94e0-5ad5b235d704 and 
+2024-01-12 00:06:44.609 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/89e5f445-d89f-4e12-94e0-5ad5b235d704
+2024-01-12 00:06:44.612 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.614 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 and 
+2024-01-12 00:06:44.617 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2024-01-12 00:06:44.632 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.634 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 and 
+2024-01-12 00:06:44.637 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2024-01-12 00:06:44.640 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.645 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/a3b9833b-8a4d-43e9-8690-61e08df81a9a and 
+2024-01-12 00:06:44.648 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/a3b9833b-8a4d-43e9-8690-61e08df81a9a
+2024-01-12 00:06:44.653 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.656 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/a3b9833b-8a4d-43e9-8690-61e08df81a9a and 
+2024-01-12 00:06:44.658 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/a3b9833b-8a4d-43e9-8690-61e08df81a9a
+2024-01-12 00:06:44.661 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.663 +03:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/2ddffc38-693a-4a00-b350-2e7695c1f690 and 
+2024-01-12 00:06:44.666 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/2ddffc38-693a-4a00-b350-2e7695c1f690
+2024-01-12 00:06:44.675 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.677 +03:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/2ddffc38-693a-4a00-b350-2e7695c1f690 and 
+2024-01-12 00:06:44.680 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/2ddffc38-693a-4a00-b350-2e7695c1f690
+2024-01-12 00:06:44.687 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:44.693 +03:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2024-01-12 00:06:44.697 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2024-01-12 00:06:44.709 +03:00 [INF] Executed ViewResult - view Index executed in 5198.8557ms.
+2024-01-12 00:06:44.711 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method after
+2024-01-12 00:06:44.712 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method after
+2024-01-12 00:06:44.714 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 5557.9677ms
+2024-01-12 00:06:44.716 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2024-01-12 00:06:44.718 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Last-Modified: 2024-01-12 00:06
+My-Key-From-Global: [Redacted]
+My-KeyFrom-Controller: [Redacted]
+My-KeyFrom-Action: [Redacted]
+2024-01-12 00:06:44.719 +03:00 [INF] HTTP GET / responded 200 in 5660.4576 ms
+2024-01-12 00:06:44.723 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-01-12 00:06:44.727 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-01-12 00:06:44.736 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-01-12 00:06:44.738 +03:00 [DBG] Disposing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:44.742 +03:00 [DBG] Disposed connection to database '' on server '' (4ms).
+2024-01-12 00:06:44.744 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/ - - - 200 - text/html;+charset=utf-8 5692.0256ms
+2024-01-12 00:06:44.800 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2024-01-12 00:06:44.805 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - -
+2024-01-12 00:06:44.824 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 23.4352ms
+2024-01-12 00:06:44.877 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.3914ms
+2024-01-12 00:06:47.238 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/Persons/Create - -
+2024-01-12 00:06:47.245 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+2024-01-12 00:06:47.250 +03:00 [DBG] The request path /Persons/Create does not match a supported file type
+2024-01-12 00:06:47.264 +03:00 [DBG] 1 candidate(s) found for the request path '/Persons/Create'
+2024-01-12 00:06:47.266 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)' with route pattern 'Persons/Create' is valid for the request path '/Persons/Create'
+2024-01-12 00:06:47.277 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:06:47.282 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:06:47.297 +03:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-01-12 00:06:47.301 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-12 00:06:47.303 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-01-12 00:06:47.307 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2024-01-12 00:06:47.312 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-12 00:06:47.314 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2024-01-12 00:06:47.317 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:47.326 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:47.328 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:47.331 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method before
+2024-01-12 00:06:47.435 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2024-01-12 00:06:47.443 +03:00 [DBG] Compiling query expression: 
+'DbSet<Country>()'
+2024-01-12 00:06:47.451 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Country>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Country.CountryName (string), 1] }
+        SELECT c.CountryID, c.CountryName
+        FROM Countries AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Country>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-01-12 00:06:47.458 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-12 00:06:47.462 +03:00 [DBG] Creating DbConnection.
+2024-01-12 00:06:47.463 +03:00 [DBG] Created DbConnection. (1ms).
+2024-01-12 00:06:47.464 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2024-01-12 00:06:47.466 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2024-01-12 00:06:47.474 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:47.477 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:47.479 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-01-12 00:06:47.484 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-01-12 00:06:47.489 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.492 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.494 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.496 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.498 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.500 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.503 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.506 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.509 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.511 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.513 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.515 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.517 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.520 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:47.523 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:47.525 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 37ms reading results.
+2024-01-12 00:06:47.527 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:47.529 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-01-12 00:06:47.535 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:47.541 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method after
+2024-01-12 00:06:47.543 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-01-12 00:06:47.545 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2024-01-12 00:06:47.546 +03:00 [DBG] View lookup cache miss for view 'Create' in controller 'Persons'.
+2024-01-12 00:06:47.549 +03:00 [INF] Executing ViewResult, running view Create.
+2024-01-12 00:06:47.550 +03:00 [DBG] The view path '/Views/Persons/Create.cshtml' was found in 3.7489ms.
+2024-01-12 00:06:47.563 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:47.566 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2024-01-12 00:06:47.568 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2024-01-12 00:06:47.575 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:47.578 +03:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2024-01-12 00:06:47.580 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2024-01-12 00:06:47.592 +03:00 [DBG] An antiforgery cookie token was reused.
+2024-01-12 00:06:47.683 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:47.691 +03:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2024-01-12 00:06:47.693 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2024-01-12 00:06:47.702 +03:00 [INF] Executed ViewResult - view Create executed in 155.2745ms.
+2024-01-12 00:06:47.704 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method after
+2024-01-12 00:06:47.708 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (CRUDExample) in 391.3965ms
+2024-01-12 00:06:47.710 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:06:47.711 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Cache-Control: [Redacted]
+Last-Modified: 2024-01-12 00:06
+Pragma: [Redacted]
+my-key: [Redacted]
+My-Key-From-Global: [Redacted]
+My-KeyFrom-Controller: [Redacted]
+2024-01-12 00:06:47.713 +03:00 [INF] HTTP GET /Persons/Create responded 200 in 468.0066 ms
+2024-01-12 00:06:47.717 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-01-12 00:06:47.719 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-01-12 00:06:47.724 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-01-12 00:06:47.726 +03:00 [DBG] Disposing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:47.728 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-01-12 00:06:47.736 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/Persons/Create - - - 200 - text/html;+charset=utf-8 497.9083ms
+2024-01-12 00:06:47.766 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2024-01-12 00:06:47.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - -
+2024-01-12 00:06:47.867 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 98.8035ms
+2024-01-12 00:06:47.898 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6932ms
+2024-01-12 00:06:49.248 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5298/Persons/Create application/x-www-form-urlencoded 259
+2024-01-12 00:06:49.255 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+2024-01-12 00:06:49.257 +03:00 [DBG] POST requests are not supported
+2024-01-12 00:06:49.260 +03:00 [DBG] 1 candidate(s) found for the request path '/Persons/Create'
+2024-01-12 00:06:49.262 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)' with route pattern 'Persons/Create' is valid for the request path '/Persons/Create'
+2024-01-12 00:06:49.267 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:06:49.268 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:06:49.278 +03:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceContracts.DTO.PersonAddRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-01-12 00:06:49.292 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-12 00:06:49.298 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResourceFilters.FeatureDisabledResourceFilter"]
+2024-01-12 00:06:49.302 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.PersonCreateAndEditPostActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2024-01-12 00:06:49.309 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-12 00:06:49.311 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2024-01-12 00:06:49.316 +03:00 [INF] FeatureDisabledResourceFilter.OnResourceExecutionAsync method before
+2024-01-12 00:06:49.318 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:49.320 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:06:49.344 +03:00 [DBG] Attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest' ...
+2024-01-12 00:06:49.348 +03:00 [DBG] Attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest' using the name '' in request data ...
+2024-01-12 00:06:49.357 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.PersonName' of type 'System.String' using the name 'PersonName' in request data ...
+2024-01-12 00:06:49.360 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.PersonName' of type 'System.String'.
+2024-01-12 00:06:49.364 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Email' of type 'System.String' using the name 'Email' in request data ...
+2024-01-12 00:06:49.366 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Email' of type 'System.String'.
+2024-01-12 00:06:49.375 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.DateOfBirth' of type 'System.Nullable`1[System.DateTime]' using the name 'DateOfBirth' in request data ...
+2024-01-12 00:06:49.390 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.DateOfBirth' of type 'System.Nullable`1[System.DateTime]'.
+2024-01-12 00:06:49.399 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Gender' of type 'System.Nullable`1[ServiceContracts.Enums.GenderOptions]' using the name 'Gender' in request data ...
+2024-01-12 00:06:49.407 +03:00 [DBG] Could not find a value in the request with name 'Gender' for binding property 'ServiceContracts.DTO.PersonAddRequest.Gender' of type 'System.Nullable`1[ServiceContracts.Enums.GenderOptions]'.
+2024-01-12 00:06:49.411 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Gender' of type 'System.Nullable`1[ServiceContracts.Enums.GenderOptions]'.
+2024-01-12 00:06:49.414 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.CountryID' of type 'System.Nullable`1[System.Guid]' using the name 'CountryID' in request data ...
+2024-01-12 00:06:49.417 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.CountryID' of type 'System.Nullable`1[System.Guid]'.
+2024-01-12 00:06:49.427 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Address' of type 'System.String' using the name 'Address' in request data ...
+2024-01-12 00:06:49.430 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Address' of type 'System.String'.
+2024-01-12 00:06:49.433 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.ReceiveNewsLetters' of type 'System.Boolean' using the name 'ReceiveNewsLetters' in request data ...
+2024-01-12 00:06:49.436 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.ReceiveNewsLetters' of type 'System.Boolean'.
+2024-01-12 00:06:49.439 +03:00 [DBG] Done attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest'.
+2024-01-12 00:06:49.442 +03:00 [DBG] Done attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest'.
+2024-01-12 00:06:49.532 +03:00 [DBG] Attempting to validate the bound parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest' ...
+2024-01-12 00:06:49.541 +03:00 [DBG] Done attempting to validate the bound parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest'.
+2024-01-12 00:06:49.547 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2024-01-12 00:06:49.550 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-12 00:06:49.563 +03:00 [DBG] Creating DbConnection.
+2024-01-12 00:06:49.564 +03:00 [DBG] Created DbConnection. (1ms).
+2024-01-12 00:06:49.566 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (15ms).
+2024-01-12 00:06:49.571 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (21ms).
+2024-01-12 00:06:49.574 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:49.576 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:49.578 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-01-12 00:06:49.586 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-01-12 00:06:49.598 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.612 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.615 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.639 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.646 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.649 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.656 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.659 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.663 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.666 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.670 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.676 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.679 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.682 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:06:49.688 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:49.690 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 91ms reading results.
+2024-01-12 00:06:49.693 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:49.699 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (5ms).
+2024-01-12 00:06:49.713 +03:00 [DBG] Request was short circuited at action filter 'CRUDExample.Filters.ActionFilters.PersonCreateAndEditPostActionFilter'.
+2024-01-12 00:06:49.715 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-01-12 00:06:49.717 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2024-01-12 00:06:49.719 +03:00 [DBG] View lookup cache hit for view 'Create' in controller 'Persons'.
+2024-01-12 00:06:49.724 +03:00 [INF] Executing ViewResult, running view Create.
+2024-01-12 00:06:49.726 +03:00 [DBG] The view path '/Views/Persons/Create.cshtml' was found in 6.2219ms.
+2024-01-12 00:06:49.728 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:49.731 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2024-01-12 00:06:49.734 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2024-01-12 00:06:49.742 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:49.745 +03:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2024-01-12 00:06:49.748 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2024-01-12 00:06:49.751 +03:00 [DBG] An antiforgery cookie token was reused.
+2024-01-12 00:06:49.769 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:06:49.772 +03:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2024-01-12 00:06:49.775 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2024-01-12 00:06:49.781 +03:00 [INF] Executed ViewResult - view Create executed in 61.3816ms.
+2024-01-12 00:06:49.782 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method after
+2024-01-12 00:06:49.786 +03:00 [INF] FeatureDisabledResourceFilter.OnResourceExecutionAsync method after
+2024-01-12 00:06:49.789 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (CRUDExample) in 474.1873ms
+2024-01-12 00:06:49.791 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:06:49.792 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Cache-Control: [Redacted]
+Last-Modified: 2024-01-12 00:06
+Pragma: [Redacted]
+2024-01-12 00:06:49.794 +03:00 [INF] HTTP POST /Persons/Create responded 200 in 538.9482 ms
+2024-01-12 00:06:49.796 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-01-12 00:06:49.797 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-01-12 00:06:49.800 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-01-12 00:06:49.823 +03:00 [DBG] Disposing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:06:49.824 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-01-12 00:06:49.840 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5298/Persons/Create application/x-www-form-urlencoded 259 - 200 - text/html;+charset=utf-8 591.8079ms
+2024-01-12 00:06:49.903 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2024-01-12 00:06:49.903 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - -
+2024-01-12 00:06:50.037 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 134.2253ms
+2024-01-12 00:06:50.592 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 688.5608ms
+2024-01-12 00:08:46.319 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5298/Persons/Create application/x-www-form-urlencoded 259
+2024-01-12 00:08:46.323 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+2024-01-12 00:08:46.325 +03:00 [DBG] POST requests are not supported
+2024-01-12 00:08:46.327 +03:00 [DBG] 1 candidate(s) found for the request path '/Persons/Create'
+2024-01-12 00:08:46.329 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)' with route pattern 'Persons/Create' is valid for the request path '/Persons/Create'
+2024-01-12 00:08:46.346 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:08:46.347 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:08:46.370 +03:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceContracts.DTO.PersonAddRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-01-12 00:08:46.374 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-12 00:08:46.376 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResourceFilters.FeatureDisabledResourceFilter"]
+2024-01-12 00:08:46.379 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.PersonCreateAndEditPostActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2024-01-12 00:08:46.394 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-12 00:08:46.397 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2024-01-12 00:08:46.409 +03:00 [INF] FeatureDisabledResourceFilter.OnResourceExecutionAsync method before
+2024-01-12 00:08:46.413 +03:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:08:46.426 +03:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2024-01-12 00:08:46.441 +03:00 [DBG] Attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest' ...
+2024-01-12 00:08:46.444 +03:00 [DBG] Attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest' using the name '' in request data ...
+2024-01-12 00:08:46.451 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.PersonName' of type 'System.String' using the name 'PersonName' in request data ...
+2024-01-12 00:08:46.457 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.PersonName' of type 'System.String'.
+2024-01-12 00:08:46.460 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Email' of type 'System.String' using the name 'Email' in request data ...
+2024-01-12 00:08:46.462 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Email' of type 'System.String'.
+2024-01-12 00:08:46.480 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.DateOfBirth' of type 'System.Nullable`1[System.DateTime]' using the name 'DateOfBirth' in request data ...
+2024-01-12 00:08:46.487 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.DateOfBirth' of type 'System.Nullable`1[System.DateTime]'.
+2024-01-12 00:08:46.491 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Gender' of type 'System.Nullable`1[ServiceContracts.Enums.GenderOptions]' using the name 'Gender' in request data ...
+2024-01-12 00:08:46.494 +03:00 [DBG] Could not find a value in the request with name 'Gender' for binding property 'ServiceContracts.DTO.PersonAddRequest.Gender' of type 'System.Nullable`1[ServiceContracts.Enums.GenderOptions]'.
+2024-01-12 00:08:46.505 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Gender' of type 'System.Nullable`1[ServiceContracts.Enums.GenderOptions]'.
+2024-01-12 00:08:46.508 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.CountryID' of type 'System.Nullable`1[System.Guid]' using the name 'CountryID' in request data ...
+2024-01-12 00:08:46.511 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.CountryID' of type 'System.Nullable`1[System.Guid]'.
+2024-01-12 00:08:46.514 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Address' of type 'System.String' using the name 'Address' in request data ...
+2024-01-12 00:08:46.527 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.Address' of type 'System.String'.
+2024-01-12 00:08:46.529 +03:00 [DBG] Attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.ReceiveNewsLetters' of type 'System.Boolean' using the name 'ReceiveNewsLetters' in request data ...
+2024-01-12 00:08:46.538 +03:00 [DBG] Done attempting to bind property 'ServiceContracts.DTO.PersonAddRequest.ReceiveNewsLetters' of type 'System.Boolean'.
+2024-01-12 00:08:46.542 +03:00 [DBG] Done attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest'.
+2024-01-12 00:08:46.546 +03:00 [DBG] Done attempting to bind parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest'.
+2024-01-12 00:08:46.612 +03:00 [DBG] Attempting to validate the bound parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest' ...
+2024-01-12 00:08:46.673 +03:00 [DBG] Done attempting to validate the bound parameter 'personRequest' of type 'ServiceContracts.DTO.PersonAddRequest'.
+2024-01-12 00:08:46.709 +03:00 [DBG] Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2024-01-12 00:08:46.713 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-12 00:08:46.715 +03:00 [DBG] Creating DbConnection.
+2024-01-12 00:08:46.717 +03:00 [DBG] Created DbConnection. (2ms).
+2024-01-12 00:08:46.719 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-01-12 00:08:46.721 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2024-01-12 00:08:46.725 +03:00 [DBG] Opening connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:08:46.727 +03:00 [DBG] Opened connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:08:46.728 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-01-12 00:08:46.747 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-01-12 00:08:46.758 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.760 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.763 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.770 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.773 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.775 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.777 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.779 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.781 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.784 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.788 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.793 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.796 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.799 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-12 00:08:46.802 +03:00 [DBG] Closing data reader to 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:08:46.810 +03:00 [DBG] A data reader for 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 51ms reading results.
+2024-01-12 00:08:46.812 +03:00 [DBG] Closing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:08:46.825 +03:00 [DBG] Closed connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-01-12 00:08:46.847 +03:00 [DBG] Request was short circuited at action filter 'CRUDExample.Filters.ActionFilters.PersonCreateAndEditPostActionFilter'.
+2024-01-12 00:08:46.856 +03:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-01-12 00:08:46.858 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method before
+2024-01-12 00:08:46.859 +03:00 [DBG] View lookup cache miss for view 'Create' in controller 'Persons'.
+2024-01-12 00:08:46.862 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2024-01-12 00:08:46.863 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2024-01-12 00:08:46.878 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2024-01-12 00:08:46.880 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2024-01-12 00:08:46.882 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2024-01-12 00:08:46.888 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPdf.cshtml'.
+2024-01-12 00:08:46.893 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2024-01-12 00:08:46.894 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-01-12 00:08:46.895 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-01-12 00:08:46.897 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-01-12 00:08:46.906 +03:00 [INF] Executing ViewResult, running view Create.
+2024-01-12 00:08:46.909 +03:00 [DBG] The view path '/Views/Persons/Create.cshtml' was found in 49.7437ms.
+2024-01-12 00:08:46.914 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:08:46.926 +03:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2024-01-12 00:08:46.928 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2024-01-12 00:08:46.934 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:08:46.980 +03:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2024-01-12 00:08:46.995 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2024-01-12 00:08:47.004 +03:00 [DBG] An antiforgery cookie token was reused.
+2024-01-12 00:08:47.014 +03:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2024-01-12 00:08:47.019 +03:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2024-01-12 00:08:47.023 +03:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2024-01-12 00:08:47.028 +03:00 [INF] Executed ViewResult - view Create executed in 168.9028ms.
+2024-01-12 00:08:47.031 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync method after
+2024-01-12 00:08:47.034 +03:00 [INF] FeatureDisabledResourceFilter.OnResourceExecutionAsync method after
+2024-01-12 00:08:47.036 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (CRUDExample) in 628.0069ms
+2024-01-12 00:08:47.038 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:08:47.039 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Cache-Control: [Redacted]
+Last-Modified: 2024-01-12 00:08
+Pragma: [Redacted]
+2024-01-12 00:08:47.041 +03:00 [INF] HTTP POST /Persons/Create responded 200 in 717.4700 ms
+2024-01-12 00:08:47.044 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-01-12 00:08:47.045 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-01-12 00:08:47.050 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-01-12 00:08:47.054 +03:00 [DBG] Disposing connection to database 'PersonsDatabase' on server '(localdb)\MSSQLLocalDB'.
+2024-01-12 00:08:47.057 +03:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2024-01-12 00:08:47.060 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5298/Persons/Create application/x-www-form-urlencoded 259 - 200 - text/html;+charset=utf-8 740.3568ms
+2024-01-12 00:08:47.072 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - -
+2024-01-12 00:08:47.072 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - -
+2024-01-12 00:08:47.078 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.7401ms
+2024-01-12 00:08:47.563 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 489.4134ms
+2024-01-12 00:08:57.866 +03:00 [DBG] Connection id "0HN0IT4FFGJSL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-12 00:09:31.473 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5298/Persons/Create application/x-www-form-urlencoded 259
+2024-01-12 00:09:31.712 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+2024-01-12 00:09:31.769 +03:00 [DBG] POST requests are not supported
+2024-01-12 00:09:31.962 +03:00 [DBG] 1 candidate(s) found for the request path '/Persons/Create'
+2024-01-12 00:09:32.401 +03:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)' with route pattern 'Persons/Create' is valid for the request path '/Persons/Create'
+2024-01-12 00:09:32.428 +03:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:09:32.440 +03:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:09:32.464 +03:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceContracts.DTO.PersonAddRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2024-01-12 00:09:32.495 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-12 00:09:32.504 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResourceFilters.FeatureDisabledResourceFilter"]
+2024-01-12 00:09:32.509 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter","CRUDExample.Filters.ActionFilters.PersonCreateAndEditPostActionFilter","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)"]
+2024-01-12 00:09:32.518 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-12 00:09:32.521 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilter.PersonsListResultFilter"]
+2024-01-12 00:09:32.527 +03:00 [INF] FeatureDisabledResourceFilter.OnResourceExecutionAsync method before
+2024-01-12 00:09:32.529 +03:00 [INF] FeatureDisabledResourceFilter.OnResourceExecutionAsync method after
+2024-01-12 00:09:32.533 +03:00 [DBG] Request was short circuited at resource filter 'CRUDExample.Filters.ResourceFilters.FeatureDisabledResourceFilter'.
+2024-01-12 00:09:32.536 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 501
+2024-01-12 00:09:32.541 +03:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (CRUDExample) in 13.4664ms
+2024-01-12 00:09:32.543 +03:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2024-01-12 00:09:32.544 +03:00 [INF] Response:
+StatusCode: 501
+2024-01-12 00:09:32.545 +03:00 [ERR] HTTP POST /Persons/Create responded 501 in 832.8164 ms
+2024-01-12 00:09:32.796 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5298/Persons/Create application/x-www-form-urlencoded 259 - 501 0 - 1322.9164ms
+2024-01-12 00:10:57.852 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-12 00:11:44.261 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" sending FIN because: "The Socket transport's send loop completed gracefully."

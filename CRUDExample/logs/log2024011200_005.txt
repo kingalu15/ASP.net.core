@@ -1,0 +1,56 @@
+2024-01-12 00:06:02.280 +03:00 [DBG] Hosting starting
+2024-01-12 00:06:04.677 +03:00 [DBG] Connection id "0HN0IT4FFGJSF" accepted.
+2024-01-12 00:06:04.678 +03:00 [DBG] Connection id "0HN0IT4FFGJSG" accepted.
+2024-01-12 00:06:05.561 +03:00 [DBG] Connection id "0HN0IT4FFGJSH" accepted.
+2024-01-12 00:06:05.581 +03:00 [DBG] Connection id "0HN0IT4FFGJSF" started.
+2024-01-12 00:06:05.596 +03:00 [DBG] Connection id "0HN0IT4FFGJSI" accepted.
+2024-01-12 00:06:05.598 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-12 00:06:05.602 +03:00 [INF] Hosting environment: Development
+2024-01-12 00:06:05.605 +03:00 [INF] Content root path: D:\projects\ASP.net.core\PersonsInfo\CRUDExample\
+2024-01-12 00:06:05.607 +03:00 [DBG] Hosting started
+2024-01-12 00:06:05.614 +03:00 [DBG] Connection id "0HN0IT4FFGJSG" started.
+2024-01-12 00:06:05.615 +03:00 [DBG] Connection id "0HN0IT4FFGJSF" disconnecting.
+2024-01-12 00:06:05.630 +03:00 [DBG] Connection id "0HN0IT4FFGJSH" started.
+2024-01-12 00:06:05.654 +03:00 [DBG] Connection id "0HN0IT4FFGJSI" started.
+2024-01-12 00:06:06.333 +03:00 [DBG] Connection id "0HN0IT4FFGJSF" stopped.
+2024-01-12 00:06:06.339 +03:00 [DBG] Connection id "0HN0IT4FFGJSG" disconnecting.
+2024-01-12 00:06:06.342 +03:00 [DBG] Connection id "0HN0IT4FFGJSG" stopped.
+2024-01-12 00:06:15.090 +03:00 [DBG] Connection id "0HN0IT4FFGJSH" disconnecting.
+2024-01-12 00:06:21.850 +03:00 [DBG] Connection id "0HN0IT4FFGJSH" stopped.
+2024-01-12 00:06:23.903 +03:00 [DBG] Connection id "0HN0IT4FFGJSI" disconnecting.
+2024-01-12 00:06:23.927 +03:00 [DBG] Connection id "0HN0IT4FFGJSI" stopped.
+2024-01-12 00:06:38.880 +03:00 [DBG] Connection id "0HN0IT4FFGJSJ" accepted.
+2024-01-12 00:06:38.883 +03:00 [DBG] Connection id "0HN0IT4FFGJSJ" started.
+2024-01-12 00:06:38.931 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" accepted.
+2024-01-12 00:06:39.041 +03:00 [DBG] Connection id "0HN0IT4FFGJSJ" disconnecting.
+2024-01-12 00:06:39.046 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" started.
+2024-01-12 00:06:39.047 +03:00 [DBG] Connection id "0HN0IT4FFGJSL" accepted.
+2024-01-12 00:06:39.047 +03:00 [DBG] Connection id "0HN0IT4FFGJSJ" stopped.
+2024-01-12 00:06:39.054 +03:00 [DBG] Connection id "0HN0IT4FFGJSL" started.
+2024-01-12 00:06:44.729 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" completed keep alive response.
+2024-01-12 00:06:44.819 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" completed keep alive response.
+2024-01-12 00:06:44.867 +03:00 [DBG] Connection id "0HN0IT4FFGJSL" completed keep alive response.
+2024-01-12 00:06:47.720 +03:00 [DBG] Connection id "0HN0IT4FFGJSL" completed keep alive response.
+2024-01-12 00:06:47.767 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" accepted.
+2024-01-12 00:06:47.776 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" started.
+2024-01-12 00:06:47.776 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" completed keep alive response.
+2024-01-12 00:06:47.893 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" completed keep alive response.
+2024-01-12 00:06:49.330 +03:00 [DBG] Connection id "0HN0IT4FFGJSM", Request id "0HN0IT4FFGJSM:00000003": started reading request body.
+2024-01-12 00:06:49.332 +03:00 [DBG] Connection id "0HN0IT4FFGJSM", Request id "0HN0IT4FFGJSM:00000003": done reading request body.
+2024-01-12 00:06:49.798 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" completed keep alive response.
+2024-01-12 00:06:50.021 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" completed keep alive response.
+2024-01-12 00:06:50.348 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" completed keep alive response.
+2024-01-12 00:08:46.428 +03:00 [DBG] Connection id "0HN0IT4FFGJSK", Request id "0HN0IT4FFGJSK:00000006": started reading request body.
+2024-01-12 00:08:46.430 +03:00 [DBG] Connection id "0HN0IT4FFGJSK", Request id "0HN0IT4FFGJSK:00000006": done reading request body.
+2024-01-12 00:08:47.047 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" completed keep alive response.
+2024-01-12 00:08:47.074 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" completed keep alive response.
+2024-01-12 00:08:47.264 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" completed keep alive response.
+2024-01-12 00:08:57.861 +03:00 [DBG] Connection id "0HN0IT4FFGJSL" disconnecting.
+2024-01-12 00:08:57.864 +03:00 [DBG] Connection id "0HN0IT4FFGJSL" stopped.
+2024-01-12 00:09:32.561 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" completed keep alive response.
+2024-01-12 00:09:32.801 +03:00 [DBG] Connection id "0HN0IT4FFGJSM", Request id "0HN0IT4FFGJSM:00000006": started reading request body.
+2024-01-12 00:09:32.805 +03:00 [DBG] Connection id "0HN0IT4FFGJSM", Request id "0HN0IT4FFGJSM:00000006": done reading request body.
+2024-01-12 00:10:57.842 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" disconnecting.
+2024-01-12 00:10:57.845 +03:00 [DBG] Connection id "0HN0IT4FFGJSK" stopped.
+2024-01-12 00:11:44.257 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" disconnecting.
+2024-01-12 00:11:44.259 +03:00 [DBG] Connection id "0HN0IT4FFGJSM" stopped.
